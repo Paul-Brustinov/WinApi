@@ -1,0 +1,7 @@
+		if( sqlite3_open("orhanaiser.dblite", &db) ){
+			decodedStr = decode(err, 1251);
+			MessageBox	(hWnd, decodedStr, L"Ошибка открытия/создания БД", NULL);
+			delete decodedStr;
+		}
+		
+		
